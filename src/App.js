@@ -7,9 +7,11 @@ function App() {
     <div className="App">
      <Weather />
      <footer>
-       This project is created by Xheni Xhelilaj and is 
+       <div className="name">
+         This project is created by Xheni Xhelilaj and is 
        <a href="https://github.com/xhenixhelilaj/react-weather-project" target="_blank"> open-sourced </a> 
-       on GitHub. 
+       on GitHub.
+        </div>
        </footer>
     </div>
   );
