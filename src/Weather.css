@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 24px;
     margin: 35px auto;
-    max-width: 500px;
+    max-width: 700px;
     padding-bottom: 10px;
 }
 
@@ -32,13 +32,9 @@
     color: black;
     font-size: 70px;
     font-weight: 300;
+    
 }
 
-.Weather img{
-    margin-right: 9px;
-    position: relative;
-    top: -20px;
-}
 
 .Weather .unit{
     position: relative;
