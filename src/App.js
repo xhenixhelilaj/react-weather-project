@@ -5,7 +5,7 @@ import "./Weather.css"
 function App() {
   return (
     <div className="App">
-     <Weather />
+     <Weather defaultCity="Zurich" />
      <footer>
        <div className="name">
          This project is created by Xheni Xhelilaj and is 
