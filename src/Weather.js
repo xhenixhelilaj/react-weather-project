@@ -8,6 +8,8 @@ import WeatherForecast from "./WeatherForecast"
 export default function Weather(props){
     const [weatherData, setWeatherData] = useState({ready: false})
     const [city, setCity] = useState(props.defaultCity)
+    const [loaded, setLoaded] = useState(false)
+
     function handleResponse(response){
         console.log(response.data);
         setWeatherData({
@@ -22,6 +24,7 @@ export default function Weather(props){
             humidity: response.data.main.humidity,
 
         })
+        setLoaded(true)
     }
 
     function search(){
@@ -38,20 +41,22 @@ export default function Weather(props){
     function handleCityChange(event){
         setCity(event.target.value)
     }
+    let form =   <form onSubmit={handleSubmit}>
+                  <div className="row">
+                      <div className="col-9">
+                         <input type="search" placeholder="Enter a city" autoFocus="on" className="form-control" onChange={handleCityChange} />
+                     </div>
+                    <div className="col-3">
+                      <input type="submit" value="Search" className="btn btn-primary w-100"/>
+                    </div> 
+                 </div>  
+                 </form>;
     
-    if(weatherData.ready){ 
+    if (loaded){
+        if(weatherData.ready){ 
       return(
         <div className="Weather">
-            <form onSubmit={handleSubmit}>
-                <div className="row">
-                   <div className="col-9">
-                     <input type="search" placeholder="Enter a city" autoFocus="on" className="form-control" onChange={handleCityChange} />
-                </div>
-                <div className="col-3">
-                     <input type="submit" value="Search" className="btn btn-primary w-100"/>
-                </div> 
-                </div>  
-            </form>
+            {form}
             <WeatherInfo data={weatherData}/>
             <WeatherForecast coordinates={weatherData.coordinates}/>
 
@@ -61,6 +66,12 @@ export default function Weather(props){
     return "Loading..."
 
     }
+    }else{
+        return form
+    }
+    
+
+    
 
 
 }
