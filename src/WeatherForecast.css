@@ -1,6 +1,8 @@
 .WeatherForecast {
     text-align: center;
-    color:gray
+    color:gray;
+    font-family:"Raleway", sans-serif
+
 }
 
 .WeatherForecast-temperature-min {
