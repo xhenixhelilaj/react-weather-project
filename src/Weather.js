@@ -67,7 +67,22 @@ export default function Weather(props){
 
     }
     }else{
-        return form
+        return(
+            <div>
+                 <div className="center">
+        <h1>Weather App</h1>
+        {form}
+        <br />
+       <footer>
+       <div className="name">
+         This project is created by Xheni Xhelilaj and is 
+       <a href="https://github.com/xhenixhelilaj/react-weather-project" target="_blank"> open-sourced </a> 
+       on GitHub.
+        </div>
+       </footer>
+      </div>
+            </div>
+        )
     }
     
 

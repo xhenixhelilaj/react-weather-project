@@ -1,6 +1,8 @@
 .App{
   max-width: 550px;
   margin: 0 auto;
+  text-align: center;
+
 }
 
 .App .name{
@@ -11,3 +13,15 @@
   font-size: 13px;
 
 }
+
+.App h1{
+  color: blue;
+  padding-bottom: 10px;
+}
+
+.App .center{
+  position: absolute;
+  top: 33%;
+  right: 33%;
+}
+
