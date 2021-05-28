@@ -5,7 +5,7 @@
     padding: 24px;
     margin: 35px auto;
     max-width: 700px;
-    padding-bottom: 10px;
+    padding-bottom: 10px;;
 }
 
 .Weather h1{
@@ -29,7 +29,7 @@
 
 .Weather .temperature{
     font-weight: bold;
-    color: black;
+    color: white;
     font-size: 70px;
     font-weight: 300;
     
@@ -42,4 +42,12 @@
     font-weight: 500;
     font-size: 20px;
     margin-left: 3px;
+}
+
+.Weather .WeatherForecast-day {
+    color:white
+}
+
+.Weather .WeatherForecast-temperatures{
+    color: white;
 }

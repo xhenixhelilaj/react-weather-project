@@ -41,13 +41,13 @@ export default function Weather(props){
     function handleCityChange(event){
         setCity(event.target.value)
     }
-    let form =   <form onSubmit={handleSubmit}>
+    let form =   <form className="form" onSubmit={handleSubmit}>
                   <div className="row">
                       <div className="col-9">
-                         <input type="search" placeholder="Enter a city" autoFocus="on" className="form-control" onChange={handleCityChange} />
+                         <input type="search" placeholder="Enter a city" className="form-control" onChange={handleCityChange} />
                      </div>
                     <div className="col-3">
-                      <input type="submit" value="Search" className="btn btn-primary w-100"/>
+                      <input type="submit" value="Search" className="btn btn-outline-light w-100"/>
                     </div> 
                  </div>  
                  </form>;
@@ -70,13 +70,12 @@ export default function Weather(props){
         return(
             <div>
                  <div className="center">
-        <h1>Weather App</h1>
+        <h1 className="title">Where are we going today?</h1>
         {form}
         <br />
        <footer>
        <div className="name">
-         This project is created by Xheni Xhelilaj and is 
-       <a href="https://github.com/xhenixhelilaj/react-weather-project" target="_blank"> open-sourced </a> 
+       <a href="https://github.com/xhenixhelilaj/react-weather-project" target="_blank" className="link" rel="noreferrer"> Open-sourced </a> 
        on GitHub.
         </div>
        </footer>

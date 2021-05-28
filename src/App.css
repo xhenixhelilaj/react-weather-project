@@ -1,8 +1,7 @@
 .App{
-  max-width: 550px;
   margin: 0 auto;
   text-align: center;
-
+  color: white;
 }
 
 .App .name{
@@ -15,13 +14,33 @@
 }
 
 .App h1{
-  color: blue;
+  color: white;
   padding-bottom: 10px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 45px;
 }
-
 .App .center{
-  position: absolute;
-  top: 33%;
-  right: 33%;
+  max-width: 500px;
+  position: fixed;
+  top: 30%;
+  right: 30%;
+  width: 50%;
+  margin: 35px auto;
+
+
 }
 
+body {
+  background-image: url("./sfondo.jpg");
+  background-size: cover;
+}
+
+.App .link{
+  color: purple;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.App .form{
+  font-family: 'Didact Gothic', sans-serif;
+}
