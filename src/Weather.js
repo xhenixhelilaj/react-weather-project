@@ -22,7 +22,6 @@ export default function Weather(props){
             description: response.data.weather[0].description,
             icon: response.data.weather[0].icon,
             humidity: response.data.main.humidity,
-
         })
         setLoaded(true)
     }
@@ -59,12 +58,10 @@ export default function Weather(props){
             {form}
             <WeatherInfo data={weatherData}/>
             <WeatherForecast coordinates={weatherData.coordinates}/>
-
         </div>
     )}else{
         search()
     return "Loading..."
-
     }
     }else{
         return(
