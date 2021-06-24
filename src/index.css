@@ -1,0 +1,12 @@
+body {
+    background-image: url("/src/images/sky.jpg");
+    background-size: cover;
+  }
+
+@media (max-width: 600px){
+    body{
+        background: no-repeat center fixed;
+        background-size: cover;
+        
+    }
+}

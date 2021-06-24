@@ -29,10 +29,7 @@
   margin: 35px auto;
 }
 
-body {
-  background-image: url("/src/images/sky.jpg");
-  background-size: cover;
-}
+
 
 .App .link{
   color: purple;
